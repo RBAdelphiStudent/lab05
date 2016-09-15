@@ -26,7 +26,7 @@ public class PersonCreator
      * Example: The user enters these Strings
      * name=David
      * surname=Terrell
-     * The class then sets firstName to equal "Dave" and lastName to equal "Terrell".
+     * The class then sets firstName to equal "David" and lastName to equal "Terrell".
      */
     public PersonCreator(String name, String surname){
         firstName=name;
@@ -84,8 +84,8 @@ public class PersonCreator
      * The method checks if these ints are valid, and then combines them to create
      * the value of String socialSecurityNumber. If any of the values are invalid, the method
      * prints an error message.
-     * Example: If the user entered 142, 287, and 6792 as the three input ints, the String
-     * socialSecurityNumber would be set to "142-287-6792". If the last value was 99999 instead,
+     * Example: If the user entered 142, 28, and 6792 as the three input ints, the String
+     * socialSecurityNumber would be set to "142-28-6792". If the last value was 99999 instead,
      * the system would produce an error message.
      */
     public void assignSSN(int ssn1, int ssn2, int ssn3){
@@ -144,6 +144,27 @@ public class PersonCreator
      * Prints the PersonCreator object's field values as the person's information.
      * This method has no inputs.
      * The method is meant to list all of the PersonCreator object's field values.
+     * Say the object has these field values.
+     * firstName=David;
+     * lastName=Terrell;
+     * sex=Male;
+     * age=22;
+     * height=72;
+     * weight=165;
+     * socialSecurityNumber="142-28-6792";
+     * address="42 Godot Street";
+     * phoneNumber="516-472-8447";
+     * birthday="4/18/1994";
+     * The method will print:
+     * Name: David Terrell
+     * Age: 22 years old
+     * Sex: male
+     * Height: 72 inches
+     * Weight: 165 pounds
+     * SSN: 142-28-6792
+     * Address: 42 Godot Street
+     * Phone Number 516-472-8447
+     * Date of Birth: 04/18/1994
      */
     public void printPersonInformation(){
         System.out.println("Name: "+firstName+" "+lastName);
